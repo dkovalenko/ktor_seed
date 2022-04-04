@@ -2,12 +2,11 @@ package com.x2sy.domain.config
 
 import com.typesafe.config.ConfigFactory
 import com.x2sy.domain.config.model.ApplicationConfiguration
-import com.x2sy.domain.video.VideoService
 import io.github.config4k.extract
-import io.ktor.server.config.*
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.bind
 import org.koin.dsl.module
+import java.util.concurrent.atomic.AtomicReference
 
 interface ConfigProvider {
     fun getApplicationConfiguration(): ApplicationConfiguration
@@ -18,8 +17,18 @@ val configModule = module {
 }
 
 class ConfigProviderImpl(): ConfigProvider {
+    private val cached = AtomicReference<ApplicationConfiguration?>()
+
     override fun getApplicationConfiguration(): ApplicationConfiguration {
-        val source = ConfigFactory.defaultApplication()
-        return source.extract<ApplicationConfiguration>("application")
+        val current = cached.get()
+        return if (current != null) {
+            current
+        } else {
+            val source = ConfigFactory.defaultApplication()
+            val newVal = source.extract<ApplicationConfiguration>("application")
+            cached.set(newVal)
+            newVal
+        }
+
     }
 }
