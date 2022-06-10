@@ -2,7 +2,6 @@ package com.x2sy.domain.video
 
 import com.x2sy.domain.config.ConfigProvider
 import com.x2sy.domain.video.model.VideoInfo
-import com.x2sy.plugins.inject
 
 
 interface VideoRepository {
@@ -13,7 +12,7 @@ class VideoRepositoryImpl(private val configProvider: ConfigProvider) : VideoRep
 
     override suspend fun getVideoInfo(id: Long): VideoInfo {
         if (id == configProvider.getApplicationConfiguration().video.magicVideoId) {
-            return VideoInfo(id, "foo", "bar")
+            return VideoInfo(id, "foo", "bar1")
         } else {
             throw Exception("Video not found")
         }

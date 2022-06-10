@@ -8,8 +8,8 @@ val config4k_version: String by project
 
 plugins {
     application
-    kotlin("jvm") version "1.6.10"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.6.10"
+    kotlin("jvm") version "1.7.0"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.7.0"
     id("com.ryandens.javaagent-application") version "0.2.2"
 }
 
