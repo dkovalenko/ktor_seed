@@ -1,7 +1,7 @@
-package com.x2sy
+package com.github.dkovalenko.ktor_seed
 
 import io.ktor.server.application.*
-import com.x2sy.plugins.*
+import com.github.dkovalenko.ktor_seed.plugins.*
 
 fun main(args: Array<String>): Unit =
         io.ktor.server.netty.EngineMain.main(args)

@@ -1,4 +1,4 @@
-package com.x2sy.domain.config.model
+package com.github.dkovalenko.ktor_seed.domain.config.model
 
 data class ApplicationConfiguration(
   val video: VideoConfiguration

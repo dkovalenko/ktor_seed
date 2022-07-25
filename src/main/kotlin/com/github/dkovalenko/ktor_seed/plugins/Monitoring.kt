@@ -1,4 +1,4 @@
-package com.x2sy.plugins
+package com.github.dkovalenko.ktor_seed.plugins
 
 import io.ktor.server.plugins.*
 import org.slf4j.event.*

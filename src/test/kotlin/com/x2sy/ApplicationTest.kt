@@ -1,4 +1,4 @@
-package com.x2sy
+package com.github.dkovalenko.ktor_seed
 
 import io.ktor.server.routing.*
 import io.ktor.http.*
@@ -16,7 +16,7 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import kotlin.test.*
 import io.ktor.server.testing.*
-import com.x2sy.plugins.*
+import com.github.dkovalenko.ktor_seed.plugins.*
 
 class ApplicationTest {
     @Test

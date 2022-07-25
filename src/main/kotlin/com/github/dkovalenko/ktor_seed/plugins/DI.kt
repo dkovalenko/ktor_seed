@@ -1,8 +1,8 @@
-package com.x2sy.plugins
+package com.github.dkovalenko.ktor_seed.plugins
 
-import com.x2sy.domain.config.configModule
+import com.github.dkovalenko.ktor_seed.domain.config.configModule
 import io.ktor.server.application.*
-import com.x2sy.domain.video.videoModule
+import com.github.dkovalenko.ktor_seed.domain.video.videoModule
 import org.koin.ktor.plugin.Koin
 import org.koin.logger.slf4jLogger
 

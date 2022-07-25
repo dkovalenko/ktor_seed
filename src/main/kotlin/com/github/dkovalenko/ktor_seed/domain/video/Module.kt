@@ -1,8 +1,8 @@
-package com.x2sy.domain.video
+package com.github.dkovalenko.ktor_seed.domain.video
 
-import com.x2sy.domain.config.ConfigProvider
-import com.x2sy.domain.config.ConfigProviderImpl
-import com.x2sy.domain.response.model.ApiResultSuccess
+import com.github.dkovalenko.ktor_seed.domain.config.ConfigProvider
+import com.github.dkovalenko.ktor_seed.domain.config.ConfigProviderImpl
+import com.github.dkovalenko.ktor_seed.domain.response.model.ApiResultSuccess
 import io.ktor.server.application.*
 import io.ktor.server.locations.*
 import io.ktor.server.response.*

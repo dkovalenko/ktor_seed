@@ -13,7 +13,7 @@ plugins {
     id("com.ryandens.javaagent-application") version "0.2.2"
 }
 
-group = "com.x2sy"
+group = "com.github"
 version = "0.0.1"
 application {
     mainClass.set("io.ktor.server.netty.EngineMain")

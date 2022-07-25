@@ -1,7 +1,7 @@
-package com.x2sy.domain.config
+package com.github.dkovalenko.ktor_seed.domain.config
 
 import com.typesafe.config.ConfigFactory
-import com.x2sy.domain.config.model.ApplicationConfiguration
+import com.github.dkovalenko.ktor_seed.domain.config.model.ApplicationConfiguration
 import io.github.config4k.extract
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.bind

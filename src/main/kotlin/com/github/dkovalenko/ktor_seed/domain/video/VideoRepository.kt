@@ -1,7 +1,7 @@
-package com.x2sy.domain.video
+package com.github.dkovalenko.ktor_seed.domain.video
 
-import com.x2sy.domain.config.ConfigProvider
-import com.x2sy.domain.video.model.VideoInfo
+import com.github.dkovalenko.ktor_seed.domain.config.ConfigProvider
+import com.github.dkovalenko.ktor_seed.domain.video.model.VideoInfo
 
 
 interface VideoRepository {

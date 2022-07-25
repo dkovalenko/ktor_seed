@@ -1,4 +1,4 @@
-package com.x2sy.domain.video.model
+package com.github.dkovalenko.ktor_seed.domain.video.model
 
 import kotlinx.serialization.Serializable
 

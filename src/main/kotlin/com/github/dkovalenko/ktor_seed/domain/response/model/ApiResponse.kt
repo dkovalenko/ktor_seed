@@ -1,4 +1,4 @@
-package com.x2sy.domain.response.model
+package com.github.dkovalenko.ktor_seed.domain.response.model
 
 import kotlinx.serialization.Serializable
 
