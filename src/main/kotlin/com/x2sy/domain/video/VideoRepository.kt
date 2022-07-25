@@ -12,7 +12,7 @@ class VideoRepositoryImpl(private val configProvider: ConfigProvider) : VideoRep
 
     override suspend fun getVideoInfo(id: Long): VideoInfo {
         if (id == configProvider.getApplicationConfiguration().video.magicVideoId) {
-            return VideoInfo(id, "foo", "bar1")
+            return VideoInfo(id, "foo", "bar")
         } else {
             throw Exception("Video not found")
         }
